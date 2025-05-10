@@ -1,0 +1,39 @@
+Performance & Scalability
+🔸 Lots of reads? → Use caching to reduce DB hits.
+🔸 Low latency needed? → Pair CDN with cache.
+🔸 Write-heavy workload? → Queue it up with message queues.
+🔸 Struggling with SQL scale? → Shard the database.
+🔸 Unpredictable traffic? → Load balancers help distribute the load.
+🔸 System growing fast? → Prefer horizontal scaling.
+
+Data Storage & Processing
+🔸 Strict consistency? → Go with RDBMS.
+🔸 Unstructured or schema-less data? → Use NoSQL.
+🔸 Big media files? → Store in Object Storage like S3.
+🔸 Heavy background tasks? → Combine batch processing + queues.
+🔸 Slow queries? → Index your data wisely.
+
+Search & Data Access
+🔸 Need powerful search? → Integrate ElasticSearch.
+🔸 Big API responses? → Break it with pagination.
+🔸 Working with graphs (friends, followers)? → Explore Graph DBs.
+
+Reliability & Fault Tolerance
+🔸 Avoiding single points of failure? → Build redundancy.
+🔸 Want resilience? → Go for data replication.
+🔸 Need health checks? → Add heartbeat signals.
+🔸 Data accuracy? → Use checksums to validate.
+
+Networking & Communication
+🔸 Global user base? → Use CDNs.
+🔸 Microservices? → Route everything via API Gateway.
+🔸 Real-time chats or games? → Use WebSockets.
+🔸 Dynamic server loads? → Try consistent hashing.
+🔸 Maps or geolocation? → Add geospatial indexing.
+🔸 Too many users flooding your system? → Apply rate limiting.
+
+Smart Practices
+🔸 Don't marry tools, marry concepts.
+🔸 Can't get perfect consistency + availability? → Understand CAP theorem and go with eventual consistency where possible.
+ 🔸 Serving domains globally? → Rely on DNS.
+ 🔸 Managing cache size? → Use LRU eviction.

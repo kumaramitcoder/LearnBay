@@ -1,0 +1,69 @@
+Mastering the Sliding Window Technique in Java: A Complete Guide for Interviews
+
+✅️The Sliding Window technique is one of the most elegant and efficient strategies for solving problems that involve arrays or strings. Whether you’re preparing for coding interviews or looking to optimize your Java code, mastering this pattern is a must-have in your developer toolbox.
+
+In this post, we’ll break down the sliding window approach step by step, cover both fixed and variable-sized windows, and walk through multiple examples to help you deeply understand the concept.
+
+❌️🔍 What is the Sliding Window Technique❓️
+
+✅️Sliding Window is a window (subarray or substring) of fixed or variable size that moves over the input (array/string), updating the result as it moves instead of recomputing everything from scratch.
+
+✅ Useful for:
+
+🔹️Maximum/minimum of subarrays
+
+🔹️Longest/shortest substring with condition
+
+🔹️Sums of subarrays
+
+🔹️Frequency/count tracking
+
+🔧 Core Idea (Fixed Size Window)
+
+1️⃣Initialize the window size (e.g. k)
+
+2️⃣Calculate the result for the first window
+
+3️⃣Slide the window: remove the element going out and add the new one coming in
+
+4️⃣Update the result
+
+🧠 Example 1: Max Sum of Subarray of Size K
+
+🧠 Example 2: Longest Substring with K Distinct Characters
+
+🔄 Template
+
+Here’s a general template for a sliding window:
+
+👇
+int left = 0, right = 0;
+while (right < s.length()) {
+ // Expand the window
+ char c = s.charAt(right);
+ // Update data structure
+ right++;
+
+ // Shrink window if invalid
+ while (/* invalid condition */) {
+ // Remove s.charAt(left) from data structure
+ left++;
+ }
+
+ // Update result
+ result = Math.max(result, right - left);
+}
+
+
+📌 Conclusion
+
+The sliding window technique is a game-changer that solves a wide range of coding problems efficiently. It optimizes your solution to run in linear time and reduces unnecessary complexity in your code.
+
+Whether you’re preparing for FAANG interviews or working on real-world projects, mastering sliding windows will give you a huge edge in performance and clarity.
+
+🧠 Want to go further? Practice problems on LeetCode include:
+
+🔹️Longest Substring Without Repeating Characters
+🔹️Minimum Window Substring
+🔹️Permutation in String
+Happy coding! 💻✨
