@@ -1,4 +1,4 @@
-package May_10_2025;
+package May_10_2025.votingalgorithms;
 
 public class VotingAlgorithm {
     public static void main(String[] args) {
