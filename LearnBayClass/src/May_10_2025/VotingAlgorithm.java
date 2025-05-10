@@ -8,15 +8,6 @@ public class VotingAlgorithm {
     // 2 1 3 2 2 1 2 2
      public static void majorityele(int[] arr){
         int n = arr.length;
-//        can we have two majority eleents
-         //        can we have two majority eleent
-         //        can we have two majority eleents
-         //        can we have two majority eleents
-         //        can we have two majority eleents
-         //        can we have two majority eleents
-         //        can we have two majority eleents
-         //        can we have two majority eleents
-
 
      }
 
